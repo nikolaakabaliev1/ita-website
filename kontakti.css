@@ -1,0 +1,269 @@
+body {
+    width: 99%;
+    margin: 0;
+    background-color: black;
+}
+
+/* Горно меню */
+#gornomenu {   
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 500; 
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+#gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  #gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+  
+  #gornomenu button {
+    color: white;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 0 5px;
+  }
+  
+  .menu {
+      position: relative;
+      display: inline-block;
+  }
+  .menu-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  .dropdown {
+      font-family: "Libre Franklin", Sans-serif;
+      display: none;
+      position: absolute;
+      background-color: red;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+  .dropdown a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+  }
+  .dropdown a:hover {
+    color: white;
+      background-color: rgb(255, 51, 51);
+  }
+  .menu:hover .dropdown {
+      display: block;
+  }
+
+.titleform{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Libre Franklin", Sans-serif;
+    color: white;
+}
+
+.form {
+    margin-top: 100px;
+}
+
+.actualform {
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+.actualform input {
+    border-radius: 10px;
+    filter: invert(100%);
+    height: 50px;
+}
+
+.name {
+    width: 600px;
+}
+
+.date {
+    width: 300px;
+}
+
+.time {
+    width: 295px;
+}
+
+.mesta {
+    width: 600px;
+}
+
+.telefon {
+    width: 600px;
+}
+
+.email {
+    width: 600px;
+}
+
+.napraveterezervaciq {
+    cursor: pointer;
+    width: 600px;
+    color: white;
+    background-color: red;
+    position: relative;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.napraveterezervaciq:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
+
+.adresitn{
+    border: 1px solid white;
+    margin-top: -450px;
+    margin-left: 1000px;
+    text-align: center;
+    font-family: "Libre Franklin", Sans-serif;
+    color: white;
+}
+
+
+.followus {
+    margin-left: 1000px;
+    font-family: "Libre Franklin", Sans-serif;
+    width: 900px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.posledvaini {
+    font-size: 22px;
+}
+
+.followus button {
+    filter: invert(100%);
+    border: 2px solid white ;
+    cursor: pointer;
+    width: 70px;
+    border-radius: 195px;
+    height: 70px;
+    background: none;
+}
+
+.followus button:hover {
+    filter: invert(0%);
+    transition: all 0.3s ease-in-out;
+    background-color: red;
+}
+
+.facebookimg {
+    height: 30px;
+}
+
+.instaimg {
+    height: 30px;
+}
+
+.twitterimg {
+    height: 30px;
+}
+
+.linkedinimg {
+    height: 30px;
+}
+
+/* Оптимизация за екрани с ширина до 800px */
+@media screen and (max-width: 800px) {
+    /* Заглавие на формата */
+    .titleform {
+        font-size: 40px;
+        margin-top: 80px;
+    }
+    
+    /* Форма за резервация */
+    .form {
+        margin-top: 60px;
+    }
+    
+    .actualform {
+        margin-left: 35px;
+        margin-top: 60px;
+        width: 430px;
+    }
+    
+    /* Полета на формата */
+    .name, .mesta, .telefon, .email, .napraveterezervaciq {
+        width: 400px;
+    }
+    
+    .date {
+        width: 145px;
+        margin-right: 5px;
+    }
+    
+    .time {
+        width: 245px;
+    }
+    
+    /* Секция с адреса */
+    .adresitn {
+        margin-top: 50px;
+        margin-left: 24px;
+        width: 400px;
+        padding: 10px;
+    }
+    
+    /* Секция "Последвай ни" */
+    .followus {
+        margin-left: 24px;
+        width: 400px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .followus button {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+    
+    .facebookimg, .instaimg, .twitterimg, .linkedinimg {
+        height: 25px;
+    }
+}

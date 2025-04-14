@@ -1,0 +1,583 @@
+/* Основни стилове */
+body {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    font-family: "Libre Franklin", Sans-serif;
+    overflow-x: hidden;
+}
+
+/* Горно меню */
+#gornomenu {   
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 500; 
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+#gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  #gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+  
+  #gornomenu button {
+    color: white;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 0 5px;
+  }
+  
+  .menu {
+      position: relative;
+      display: inline-block;
+  }
+  .menu-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  .dropdown {
+      font-family: "Libre Franklin", Sans-serif;
+      display: none;
+      position: absolute;
+      background-color: red;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+  .dropdown a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+  }
+  .dropdown a:hover {
+    color: white;
+      background-color: rgb(255, 51, 51);
+  }
+  .menu:hover .dropdown {
+      display: block;
+  }
+
+/* Секция с хамбургер */
+#podmenu {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 930px;
+    overflow: hidden;
+}
+
+#burger {
+    filter: brightness(60%);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+#opitaineshnovo1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: "Libre Franklin", Sans-serif;
+    font-size: 65px;
+    max-width: 450px;
+    margin: 0;
+    padding-top: 250px;
+    padding-left: 10%;
+}
+
+#poruchai {
+    cursor: pointer;
+    width: 300px;
+    color: white;
+    background-color: red;
+    position: relative;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+    margin-top: 30px;
+    margin-left: 10%;
+    padding: 10px 20px;
+}
+
+#poruchai:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
+
+/* Секция "Разгледай менюто ни" */
+#prikanvanemenu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1400px;
+    margin: 300px auto 0;
+    color: white;
+}
+
+#texts {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+#gladen {
+    color: red;
+    margin-bottom: 10px;
+}
+
+#predlagane {
+    font-size: 55px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#predlagane2 {
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+#poruchai1 {
+    cursor: pointer;
+    width: 300px;
+    color: white;
+    background-color: red;
+    position: relative;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+#poruchai1:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
+
+#snimki {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.snimka1, .snimka2, .tarator {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Секция "За нас" */
+.zanas {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1400px;
+    margin: 100px auto;
+    color: white;
+}
+
+.burgerchebe {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texts {
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.nadzaglavie {
+    color: red;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.zaglavie {
+    font-size: 55px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.avtobiografiq {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+#nauchi {
+    cursor: pointer;
+    width: 300px;
+    color: white;
+    background-color: red;
+    position: relative;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+#nauchi:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
+
+/* Секция "Свържи се с нас" */
+.svurjise {
+    color: black;
+    font-family: "Libre Franklin", Sans-serif;
+    width: 100%;
+}
+
+.texts2 {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 40px 0;
+}
+
+/* Стилове за меню страницата */
+.zaglavnachast {
+    font-family: "Libre Franklin", Sans-serif;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.menuzaglavie {
+    color: red;
+}
+
+.menuzaglavie2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.menubiographiq {
+    max-width: 800px;
+    font-size: 18px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.predlojeniqmenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.purvox, .vtorox, .tretox, .chetirix, .petx, .shestx {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+.purvox a, .vtorox a, .tretox a, .chetirix a, .petx a, .shestx a {
+    color: white;
+    text-decoration: none;
+}
+
+.purvoqstie {
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: transparent;
+    text-align: left;
+}
+
+.zaglavieprodukt {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.opisanieprodukt {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cenaprodukt1 {
+    color: red;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#poruchai3 {
+    cursor: pointer;
+    width: 250px;
+    color: black;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+#poruchai3:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
+
+#razgledai {
+    cursor: pointer;
+    width: 300px;
+    color: white;
+    background-color: red;
+    position: relative;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+    margin: 50px auto;
+    padding: 10px 20px;
+    display: block;
+}
+
+#razgledai:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
+
+/* Оптимизация за екрани с ширина до 800px */
+@media screen and (max-width: 800px) {
+    
+
+    /* Секция с хамбургер */
+    #podmenu {
+        max-height: 700px;
+    }
+    
+    #opitaineshnovo1 {
+        font-size: 45px;
+        max-width: 400px;
+        padding-top: 200px;
+    }
+    
+    #poruchai {
+        width: 250px;
+    }
+    
+    /* Секция "Разгледай менюто ни" */
+    #prikanvanemenu {
+        margin-top: 150px;
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #texts {
+        max-width: 600px;
+        margin-right: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    #predlagane {
+        font-size: 45px;
+    }
+    
+    #predlagane2 {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #poruchai1 {
+        margin: 30px auto;
+        display: block;
+    }
+    
+    #snimki {
+        max-width: 600px;
+    }
+    
+    /* Секция "За нас" */
+    .zanas {
+        margin-left: 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .burgerchebe {
+        margin-left: 45px;
+        max-width: 400px;
+    }
+    
+    .texts {
+        margin-left: 25px;
+        max-width: 600px;
+        padding: 0;
+    }
+    
+    .zaglavie {
+        font-size: 35px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .avtobiografiq {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #nauchi {
+        margin: 30px auto;
+        display: block;
+    }
+    
+    /* Стилове за меню страницата */
+    .menuzaglavie2 {
+        font-size: 40px;
+    }
+    
+    .menubiographiq {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    
+    /* Продуктови карти */
+    .purvox, .vtorox, .tretox, .chetirix, .petx, .shestx {
+        min-width: 250px;
+        max-width: 350px;
+    }
+    
+    .purvox a, .vtorox a, .tretox a, .chetirix a, .petx a, .shestx a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    /* Заглавия и описания в продуктовите карти */
+    .zaglavieprodukt {
+        font-size: 18px;
+    }
+    
+    .opisanieprodukt {
+        font-size: 16px;
+    }
+    
+    .cenaprodukt1 {
+        font-size: 16px;
+        display: block;
+        text-align: center;
+    }
+    
+    /* Бутони */
+    #poruchai3 {
+        width: 200px;
+        display: block;
+        margin: 20px auto;
+    }
+    
+    #razgledai {
+        width: 250px;
+    }
+    
+    /* Общи стилове за връзки */
+    a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    a:hover {
+        color: #ff6666;
+    }
+    
+    /* Връзки в навигацията */
+    nav a {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+    
+    /* Връзки-бутони */
+    a.button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    /* Връзки в секцията "Свържи се с нас" */
+    .svurjise a {
+        color: #ff3333;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .svurjise a:hover {
+        color: #cc0000;
+    }
+}

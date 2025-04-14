@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторант "При Бай Кольо"</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="gornomenu">
+        <a href="home.html"><button>Начало</button></a>
+        <a href="zanas.html"><button>За нас</button></a>
+        <div class="menu">
+          <button class="menu-button">Меню</button>
+          <div class="dropdown">
+              <a href="salati.html">Салати и разрядки</a>
+              <a href="qstiq.html">Основни ястия</a>
+              <a href="mezeta.html">Гарнитури и мезета</a>
+              <a href="supipredqstiq.html">Супи и предястия</a>
+              <a href="deserti.html">Десерти и ядки</a>
+              <a href="napitki.html">Напитки</a>
+          </div>
+      </div>
+        <a href="kontakti.html"><button>Контакти</button></a>
+    </div> <br><br>
+    <div class="checkout"><br><br><br><br>
+        <h1 class="checkouttitle">ПЛАЩАНЕ</h1><br><br>
+        <div class="paymentform"><br><br>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="2788195d-b520-4f20-be57-3d53d9a1652b">
+                <input type="text" name="name" placeholder="Име и фамилия" required><br><br>
+                <input type="email" name="email" placeholder="Имейл" required><br><br>
+                <input type="tel" name="Телефонен номер" placeholder="Телефонен номер" required><br><br>
+                <input type="text" name="Адрес" placeholder="Адрес" required><br><br>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;"><br>
+                <button class="continuepayment" type="submit">ПРОДЪЛЖИ ПЛАЩАНЕ</button>
+            
+            </form>
+        </div>
+
+    <div class="produkt">
+        <h1>Вашата поръчка</h1>
+
+    <div id="product-details">
+        <h2 id="product-name"></h2>
+        <img id="product-image" src="" alt="Продуктово изображение" style="max-width: 300px;">
+        <p id="product-price"></p>
+    </div>
+
+    <script>
+        // Функция за получаване на параметри от URL-а
+        function getQueryParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return {
+                name: urlParams.get('product_name'),
+                price: urlParams.get('product_price'),
+                image: urlParams.get('product_image')
+            };
+        }
+
+        // Функция за показване на продукта
+        function displayProduct() {
+            // Вземаме параметрите от URL-а
+            const product = getQueryParams();
+
+            // Поставяме данните в HTML елементите
+            document.getElementById('product-name').innerText = product.name || 'Неизвестен продукт';
+            document.getElementById('product-price').innerText = product.price || 'Цена не е налична';
+            document.getElementById('product-image').src = product.image || 'https://via.placeholder.com/300';  // Поставяме placeholder, ако няма изображение
+        }
+
+        // Извикваме функцията при зареждане на страницата
+        window.onload = displayProduct;
+    </script>
+    </div>
+    
+</body>
+</html>

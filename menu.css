@@ -1,0 +1,254 @@
+body {
+    width: 99%;
+    margin: 0;
+    background-color: black;
+    font-family: "Libre Franklin", Sans-serif;
+  }
+  
+ /* Горно меню */
+#gornomenu {   
+  position: fixed;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  z-index: 500; 
+  text-align: center;
+  width: 100%;
+  background-color: red;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#gornomenu button:hover {
+  color: black;
+  cursor: pointer;
+  animation: pulse 0.5s ease-in-out;
+}
+
+#gornomenu button:hover {
+  color: black;
+  cursor: pointer;
+  animation: pulse 0.5s ease-in-out;
+}
+
+#gornomenu button {
+  color: white;
+  height: 50px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+.menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.dropdown {
+    font-family: "Libre Franklin", Sans-serif;
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.dropdown a:hover {
+  color: white;
+    background-color: rgb(255, 51, 51);
+}
+.menu:hover .dropdown {
+    display: block;
+}
+  .burgir {
+    z-index: 1;
+    position: absolute;
+    filter: brightness(50%);
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .textsonburgir {
+    text-decoration-color: red;
+    text-decoration-line: underline;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 2px;
+    font-family: "Libre Franklin", Sans-serif;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
+  }
+  
+  .secondtitleqstiq {
+    margin-left: -200px;
+    font-size: 30px;
+    text-decoration-color: red;
+    text-decoration-line: underline;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 2px;
+    font-family: "Libre Franklin", Sans-serif;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+  }
+  
+  .shopskasalata {
+    height: 200px;
+  }
+  
+  .textsonburgir h1 {
+    font-size: 65px;
+  }
+  
+  .textsonburgir p {
+    margin-left: 550px;
+    width: 800px;
+  }
+  
+  .predlojeniqmenu {
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+  
+  .purvox {
+    margin-top: -30px;
+    margin-left: 70px;
+  }
+  
+  .vtorox {
+    margin-top: -595px;
+    margin-left: 550px;
+  }
+  
+  .tretox {
+    margin-top: -410px;
+    margin-left: 1000px;
+  }
+  
+  .purvox a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .vtorox a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .tretox a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .purvoqstie {
+    width: 400px;
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .zaglavieprodukt {
+    font-size: 20px;
+  }
+  
+  .opisanieprodukt {
+    font-size: 18px;
+  }
+  
+  .cenaprodukt1 {
+    color: red;
+    font-size: 18px;
+  }
+  
+  #poruchai3 {
+    cursor: pointer;
+    width: 250px;
+    color: black;
+    background-color: white;
+    position: relative;
+    margin-top: 40px;
+    margin-left: -320px;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+  }
+  
+  #poruchai3:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+  }
+  
+  .svurjise {
+    color: black;
+    font-family: "Libre Franklin", Sans-serif;
+  }
+  
+  .texts2 {
+    height: 200px;
+    width: 101%;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .secondtitleofqstiq2 {
+    margin-left: 50px;
+    width: 500px;
+  }
+
+  #rizoto {
+    margin-left: 690px;
+  }
+
+  #skara {
+    margin-left: 690px;
+  }
+
+  #hlqb {
+    margin-left: 690px;
+  }
+
+  #mezeta {
+    margin-left: 690px;
+  }
+
+  #mesnitopli {
+    margin-left: 690px;
+  }
+
+  #qdki {
+    margin-left: 690px;
+  }

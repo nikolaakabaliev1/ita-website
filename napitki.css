@@ -1,0 +1,494 @@
+/* Existing styles in napitki.css */
+body {
+    width: 99%;
+    margin: 0;
+    background-color: black;
+}
+
+/* Горно меню */
+#gornomenu {   
+  position: fixed;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  z-index: 500; 
+  text-align: center;
+  width: 100%;
+  background-color: red;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#gornomenu button:hover {
+  color: black;
+  cursor: pointer;
+  animation: pulse 0.5s ease-in-out;
+}
+
+#gornomenu button:hover {
+  color: black;
+  cursor: pointer;
+  animation: pulse 0.5s ease-in-out;
+}
+
+#gornomenu button {
+  color: white;
+  height: 50px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+.menu-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.dropdown {
+    font-family: "Libre Franklin", Sans-serif;
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.dropdown a:hover {
+  color: white;
+    background-color: rgb(255, 51, 51);
+}
+.menu:hover .dropdown {
+    display: block;
+}
+
+.burgir {
+    z-index: 1;
+    position: absolute;
+    filter: brightness(50%);
+    height: 800px;
+    width: 100%;
+}
+
+.textsonburgir {
+    text-decoration-color: red;
+    text-decoration-line: underline;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 2px;
+    font-family: "Libre Franklin", Sans-serif;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.secondtitleqstiq {
+    margin-left: -200px;
+    font-size: 30px;
+    text-decoration-color: red;
+    text-decoration-line: underline;
+    text-underline-offset: 30px;
+    text-decoration-thickness: 2px;
+    font-family: "Libre Franklin", Sans-serif;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.shopskasalata {
+    height: 200px;
+}
+
+.textsonburgir h1 {
+    font-size: 65px;
+}
+
+.textsonburgir p {
+    margin-left: 550px;
+    width: 800px;
+}
+
+.predlojeniqmenu {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.purvox {
+    margin-top: -30px;
+    margin-left: 70px;
+}
+
+.vtorox {
+    margin-top: -370px;
+    margin-left: 550px;
+}
+
+.tretox {
+    margin-top: -370px;
+    margin-left: 1000px;
+}
+
+.purvox a {
+    color: white;
+    text-decoration: none;
+}
+
+.vtorox a {
+    color: white;
+    text-decoration: none;
+}
+
+.tretox a {
+    color: white;
+    text-decoration: none;
+}
+
+.purvoqstie {
+    width: 400px;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.zaglavieprodukt {
+    font-size: 20px;
+}
+
+.opisanieprodukt {
+    font-size: 18px;
+}
+
+.cenaprodukt1 {
+    color: red;
+    font-size: 18px;
+}
+
+#poruchai3 {
+    cursor: pointer;
+    width: 250px;
+    color: black;
+    background-color: white;
+    position: relative;
+    margin-top:40px;
+    margin-left: -320px;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+#poruchai3:hover {
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    background-color: black;
+}
+
+.svurjise {
+    color: black;
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.texts2 {
+    height: 200px;
+    width: 101%;
+    text-align: center;
+    background-color: white;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+  .textsonburgir p {
+    margin-left: 350px;
+    width: 700px;
+  }
+
+  .vtorox {
+    margin-left: 450px;
+  }
+
+  .tretox {
+    margin-left: 850px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .textsonburgir h1 {
+    font-size: 50px;
+  }
+
+  .textsonburgir p {
+    margin-left: 250px;
+    width: 600px;
+  }
+
+  .vtorox {
+    margin-left: 400px;
+  }
+
+  .tretox {
+    margin-left: 750px;
+  }
+}
+
+/* Tablet mode */
+@media screen and (max-width: 768px) {
+  #gornomenu {
+    width: 100%;
+    margin-left: 0;
+    padding: 5px 0;
+  }
+
+  #gornomenu button {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .burgir {
+    height: 600px;
+  }
+
+  .textsonburgir {
+    margin-top: 150px;
+  }
+
+  .textsonburgir h1 {
+    font-size: 40px;
+  }
+
+  .textsonburgir p {
+    margin-left: 100px;
+    width: 500px;
+  }
+
+  .secondtitleqstiq {
+    margin-left: -100px;
+    margin-top: 50px;
+  }
+
+  /* Mobile layout for products */
+  .predlojeniqmenu {
+    margin-top: 100px;
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .purvox {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .vtorox {
+    margin: 450px auto 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .tretox {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .purvoqstie {
+    width: 100%;
+  }
+
+  #poruchai3 {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .texts2 {
+    width: 100%;
+  }
+
+  .secondtitleofqstiq2 {
+    margin-left: 25px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .textsonburgir {
+    margin-top: 120px;
+  }
+
+  .textsonburgir h1 {
+    font-size: 32px;
+  }
+
+  .textsonburgir p {
+    margin-left: 50px;
+    width: 400px;
+  }
+
+  .secondtitleqstiq {
+    margin-left: -50px;
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .burgir {
+    height: 500px;
+  }
+
+  .shopskasalata {
+    height: 150px;
+  }
+
+  .dropdown {
+    min-width: 150px;
+  }
+
+  .vtorox {
+    margin-top: 350px;
+  }
+
+  .tretox {
+    margin-top: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+
+  #gornomenu {
+    width: 100%;
+  }
+
+  .textsonburgir {
+    margin-top: 100px;
+  }
+
+  .textsonburgir h1 {
+    font-size: 28px;
+  }
+
+  .textsonburgir p {
+    margin-left: 20px;
+    width: 300px;
+  }
+
+  .secondtitleqstiq {
+    margin-left: 0;
+    font-size: 22px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .burgir {
+    height: 450px;
+  }
+
+  .shopskasalata {
+    height: 150px;
+  }
+
+  .vtorox {
+    margin-top: 300px;
+  }
+
+  .tretox {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    font-size: 16px;
+  }
+
+  #gornomenu button {
+    font-size: 14px;
+  }
+
+  .textsonburgir {
+    margin-top: 80px;
+  }
+
+  .textsonburgir h1 {
+    font-size: 24px;
+  }
+
+  .textsonburgir p {
+    margin-left: 10px;
+    width: 250px;
+  }
+
+  .secondtitleqstiq {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .burgir {
+    height: 400px;
+  }
+
+  .shopskasalata {
+    height: 120px;
+  }
+
+  .vtorox {
+    margin-top: 250px;
+  }
+
+  .tretox {
+    margin-top: 250px;
+  }
+}
+
+/* Specific settings for very small screens */
+@media screen and (max-width: 320px) {
+  .textsonburgir p {
+    width: 200px;
+  }
+
+  #gornomenu button {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+
+  .vtorox {
+    margin-top: 220px;
+  }
+
+  .tretox {
+    margin-top: 220px;
+  }
+}

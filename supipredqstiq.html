@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторант "При Бай Кольо"</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find all "ПОРЪЧАЙ СЕГА" buttons
+    const orderButtons = document.querySelectorAll('#poruchai3');
+    
+    orderButtons.forEach(button => {
+      // Find the closest product container
+      const productContainer = button.closest('.purvox, .vtorox, .tretox');
+      
+      if (productContainer) {
+        // Get product details
+        const productNameElement = productContainer.querySelector('.zaglavieprodukt');
+        const productPriceElement = productContainer.querySelector('.cenaprodukt1');
+        const productImageElement = productContainer.querySelector('.shopskasalata');
+        
+        if (productNameElement && productPriceElement && productImageElement) {
+          const productName = productNameElement.textContent;
+          const productPrice = productPriceElement.textContent;
+          const productImage = productImageElement.src;
+          
+          // Get product ID from container id or generate one if not available
+          const productId = productContainer.id || 'product_' + Math.random().toString(36).substr(2, 9);
+          
+          // Find the parent anchor tag of the button
+          const orderLink = button.closest('a');
+          
+          if (orderLink) {
+            // Update the href with the correct product information
+            orderLink.href = `checkout.html?product_id=${encodeURIComponent(productId)}&product_name=${encodeURIComponent(productName)}&product_price=${encodeURIComponent(productPrice)}&product_image=${encodeURIComponent(productImage)}`;
+            
+            // Add a console log to verify the link is updated (for debugging)
+            console.log('Updated link for', productName, ':', orderLink.href);
+          }
+        }
+      }
+    });
+  });
+</script>
+<body>
+    <div id="gornomenu">
+        <a href="home.html"><button>Начало</button></a>
+        <a href="zanas.html"><button>За нас</button></a>
+        <div class="menu">
+          <button class="menu-button">Меню</button>
+          <div class="dropdown">
+              <a href="salati.html">Салати и разрядки</a>
+              <a href="qstiq.html">Основни ястия</a>
+              <a href="mezeta.html">Гарнитури и мезета</a>
+              <a href="supipredqstiq.html">Супи и предястия</a>
+              <a href="deserti.html">Десерти и ядки</a>
+              <a href="napitki.html">Напитки</a>
+          </div>
+      </div>
+        <a href="kontakti.html"><button>Контакти</button></a>
+    </div> <br>
+    <div class="podmenunamenu">
+        <div class="textsonburgir"><br><br>
+            <h1 class="menuzaglavie">СУПИ</h1>
+        </div>
+</div>
+        <div class="predlojeniqmenu">
+          <div class="purvox">
+            <a href=""><button class="purvoqstie">
+              <img class="shopskasalata" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsJtNY5i-vQj7s0_m_imSf76Bv4TYpXgai1Q&s" alt="">
+              <h3 class="zaglavieprodukt">ТАРАТОР</h3>
+              <p class="cenaprodukt1">11.99 лв.</p><br><br>
+              <a href="checkout.html?product_id=123&product_name=ExampleProduct&product_price=49.99&product_image=https://example.com/images/example-product.jpg"><button id="poruchai3"><h2>ПОРЪЧАЙ СЕГА</h2></button></a>
+            </button></a>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="vtorox">
+            <a href=""><button class="purvoqstie">
+              <img class="shopskasalata" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQUQHupuxzzn3aOC4BMkc8eqj95x2ZdEbDgQ&s" alt="">
+              <h3 class="zaglavieprodukt">ПИЛЕШКА СУПА</h3>
+              <p class="cenaprodukt1">7.99 лв.</p><br><br>
+              <a href="checkout.html?product_id=123&product_name=ExampleProduct&product_price=49.99&product_image=https://example.com/images/example-product.jpg"><button id="poruchai3"><h2>ПОРЪЧАЙ СЕГА</h2></button></a>
+            </button></a>
+          </div><br><br><br>
+          <div class="tretox">
+            <a href=""><button class="purvoqstie">
+              <img class="shopskasalata" src="https://gotvach.bg/files/1200x800/teleshkovarenoklasika.webp" alt="">
+              <h3 class="zaglavieprodukt">ТЕЛЕШКО ВАРЕНО</h3>
+              <p class="cenaprodukt1">14.99 лв.</p><br><br>
+              <a href="checkout.html?product_id=123&product_name=ExampleProduct&product_price=49.99&product_image=https://example.com/images/example-product.jpg"><button id="poruchai3"><h2>ПОРЪЧАЙ СЕГА</h2></button></a>
+            </button></a>
+          </div><br><br><br><br>
+          <div class="secondtitleqstiq">
+            <h1 class="secondtitleofqstiq2" id="mesnitopli">МЕСНИ ТОПЛИ <br><br><span>ПРЕДЯСТИЯ</span></h1>
+          </div><br><br><br><br><br>
+          <div class="purvox">
+            <a href=""><button class="purvoqstie">
+              <img class="shopskasalata" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThcpO7CNw2JXEN4Efiphb16NJuq60KwaWTug&s" alt="">
+              <h3 class="zaglavieprodukt">ГЪШИ ДРОБ НА ТИГАН</h3>
+              <p class="cenaprodukt1">11.99 лв.</p><br><br>
+              <a href="checkout.html?product_id=123&product_name=ExampleProduct&product_price=49.99&product_image=https://example.com/images/example-product.jpg"><button id="poruchai3"><h2>ПОРЪЧАЙ СЕГА</h2></button></a>
+            </button></a>
+          </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div id="filencaskornfleiks" class="vtorox">
+            <a href=""><button class="purvoqstie">
+              <img class="shopskasalata" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhhRRY--bC64EiCsvMDRs-LNyg0EEU7b8VA&s" alt="">
+              <h3 class="zaglavieprodukt">ХРУПКАВИ ПИЛЕШКИ ФИЛЕНЦА С КОРНФЛЕЙКС</h3>
+              <p class="cenaprodukt1">7.99 лв.</p><br><br>
+              <a href="checkout.html?product_id=filencaskornfleiks&product_name=Хрупкави пилешки филенца с корнфлейкс&product_price=7.99 лв.&product_image=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhhRRY--bC64EiCsvMDRs-LNyg0EEU7b8VA&s"><button id="poruchai3"><h2>ПОРЪЧАЙ СЕГА</h2></button></a>
+            </button></a>
+          </div><br><br><br>
+          <div id="shkembevmaslo" class="tretox">
+            <a href=""><button class="purvoqstie">
+              <img class="shopskasalata" src="https://gotvach.bg/files/1200x800/shkembemaslo.webp" alt="">
+              <h3 class="zaglavieprodukt">ШКЕМБЕ В МАСЛО</h3>
+              <p class="cenaprodukt1">14.99 лв.</p><br><br>
+              <a href="checkout.html?product_id=shkembevmaslo&product_name=Шкембе в масло&product_price=14.99 лв.&product_image=https://gotvach.bg/files/1200x800/shkembemaslo.webp"><button id="poruchai3"><h2>ПОРЪЧАЙ СЕГА</h2></button></a>
+            </button></a>
+          </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="svurjise">
+            <div class="texts2"><br>
+              <h1 class="title">СВЪРЖИ СЕ С НАС</h1>
+              <p class="somethinglikebio">ул. "Граф Игнатиев" 25, 1000 София, България</p>
+              <p class="gmail">ресторант@gmail.com</p>
+              <p class="telefon">+359 111 111</p>
+            </div> 
+          </div>

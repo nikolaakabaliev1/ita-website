@@ -1,0 +1,513 @@
+body {
+    width: 99%;
+    margin: 0;
+    background-color: black;
+}
+
+/* Горно меню */
+#gornomenu {   
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 500; 
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+#gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  #gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+  
+  #gornomenu button {
+    color: white;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 0 5px;
+  }
+  
+  .menu {
+      position: relative;
+      display: inline-block;
+  }
+  .menu-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  .dropdown {
+      font-family: "Libre Franklin", Sans-serif;
+      display: none;
+      position: absolute;
+      background-color: red;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+  .dropdown a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+  }
+  .dropdown a:hover {
+    color: white;
+      background-color: rgb(255, 51, 51);
+  }
+  .menu:hover .dropdown {
+      display: block;
+  }
+
+.imgpodmenu {
+    filter: brightness(50%);
+    margin-top: -250px;
+    position: absolute;  /* Създава контекст за позициониране */
+    z-index: 1;  /* Изображението е под бутона */
+    margin-left: -20px;
+    width: 101%;
+    height: 930px;
+}
+
+.texts {
+    position: relative;
+    text-align: center;
+    margin-top: 200px;
+    z-index: 2;
+    color: white;
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.zanaszaglavie {
+    font-size: 65px;
+}
+
+.zanaspod {
+    margin-left: 430px;
+    width: 1000px;
+    font-size: 18px;
+}
+
+.informaciqtazanas {
+    margin-left: 500px;
+    margin-top: 700px;
+}
+
+.imageinformaciq {
+    z-index: 1;
+    position: absolute;
+    height: 400px;
+}
+
+.texts2 {
+    font-size: 18px;
+    margin-top: -400px;
+    margin-left: 550px;
+    width: 400px;
+    color: white;
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.opisanienarestoranta {
+    font-family: "Libre Franklin", Sans-serif;
+    border-radius: 55px;
+    background-color: gray;
+    z-index: 2;
+    position: absolute;
+    margin-left: -250px;
+    width: 750px;
+    border: 2px solid white;
+}
+
+.deset {
+    font-size: 20px;
+    text-align: center;
+    margin-left:-550px;
+}
+
+.petstotin {
+    margin-top: -165px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -50px;
+}
+
+.petdeset {
+    width: 150px;
+    margin-top: -165px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+.vutreshnitextove {
+    margin-left: 40px;
+}
+
+.secondsection {
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.textswithfollowus {
+    color: black;
+    text-align: center;
+    margin-left: -500px;
+    margin-top: 200px;
+}
+
+.posledvaini {
+    font-size: 22px;
+}
+
+.followus {
+    height: 200px;
+    width: 211%;
+    background-color: white;
+    margin-left: -550px;
+}
+
+.followus button {
+    border: 2px solid black ;
+    cursor: pointer;
+    width: 70px;
+    border-radius: 195px;
+    height: 70px;
+    background: none;
+}
+
+.followus button:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: red;
+}
+
+.facebookimg {
+    height: 30px;
+}
+
+.instaimg {
+    height: 30px;
+}
+
+.twitterimg {
+    height: 30px;
+}
+
+.linkedinimg {
+    height: 30px;
+}
+
+.ekiputni {
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.texts3 {
+    text-align: center;
+    color: white;
+}
+
+.zapoznaises {
+    font-size: 18px;
+    color: red;
+}
+
+.zaglaviezapoznaise {
+    margin-left: 300px;
+    width: 1300px;
+    font-size: 55px;
+}
+
+.predlojeniqmenu {
+    margin-left: 200px;
+}
+
+.purvox {
+    margin-top: -100px;
+    margin-left: 70px;
+}
+
+.vtorox {
+    margin-top: -500px;
+    margin-left: 550px;
+}
+
+.tretox {
+    margin-top: -500px;
+    margin-left: 1000px;
+}
+
+.chetirix {
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+.petx {
+    margin-top: -500px;
+    margin-left: 550px;
+}
+
+.shestx {
+    margin-top: -500px;
+    margin-left: 1000px;
+}
+
+.purvox a {
+    color: white;
+    text-decoration: none;
+}
+
+.vtorox a {
+    color: white;
+    text-decoration: none;
+}
+
+.tretox a {
+    color: white;
+    text-decoration: none;
+}
+
+.chetirix a {
+    color: white;
+    text-decoration: none;
+}
+
+.petx a {
+    color: white;
+    text-decoration: none;
+}
+
+.shestx a {
+    color: white;
+    text-decoration: none;
+}
+
+.purvoqstie {
+    width: 400px;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.zaglavieprodukt {
+    font-size: 30px;
+}
+
+.opisanieprodukt {
+    font-size: 18px;
+}
+
+.cenaprodukt1 {
+    color: red;
+    font-size: 18px;
+}
+
+#poruchai3 {
+    cursor: pointer;
+    width: 250px;
+    color: black;
+    background-color: white;
+    position: relative;
+    margin-top:40px;
+    margin-left: -320px;
+    z-index: 2;
+    border-radius: 55px;
+    border: 1px solid black;
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.kontakti {
+    width: 101%;
+    background-color: white;
+    font-family: "Libre Franklin", Sans-serif;
+}
+
+.texts61 {
+    height: 200px;
+    text-align: center;
+    color: black;
+}
+
+/* Оптимизация за екрани с ширина до 800px */
+@media screen and (max-width: 768px) {
+    /* Основно изображение */
+    .imgpodmenu {
+        width: 470px;
+        height: 700px;
+    }
+    
+    /* Текстове в горната секция */
+    .zanaszaglavie {
+        font-size: 45px;
+    }
+    
+    .zanaspod {
+        margin-left: 40px;
+        width: 400px;
+        font-size: 16px;
+    }
+    
+    /* Информация за нас секция */
+    .informaciqtazanas {
+        margin-left: 100px;
+        margin-top: 600px;
+    }
+    
+    .imageinformaciq {
+        margin-left: -50px;
+        margin-top: -350px;
+        height: 300px;
+    }
+    
+    .texts2 {
+        margin-top: 30px;
+        margin-left: 0px;
+        width: 300px;
+        font-size: 16px;
+    }
+    
+    /* Описание на ресторанта */
+    .opisanienarestoranta {
+        height: 270px;
+        margin-left: -85px;
+        width: 430px;
+    }
+    
+    .deset {
+        margin-left: -250px;
+        font-size: 18px;
+    }
+    
+    .petstotin {
+        margin-top: -20px;
+        margin-left: -250px;
+        font-size: 18px;
+    }
+    
+    .petdeset {
+        margin-top: -200px;
+        margin-left: 200px;
+        font-size: 18px;
+    }
+    
+    /* Секция "Последвай ни" */
+    .textswithfollowus {
+        margin-left: -300px;
+    }
+    
+    .followus {
+        width: 75%;
+        margin-left: 200px;
+    }
+    
+    /* Секция "Екипът ни" */
+    .zaglaviezapoznaise {
+        margin-left: 35px;
+        width: 400px;
+        font-size: 40px;
+    }
+    
+    /* Секция с екипа - подреждане на работниците един под друг */
+    .predlojeniqmenu {
+        margin-left: 40px;
+        position: relative;
+        height: 3000px; /* Увеличаваме височината за да има място за всички елементи */
+    }
+    
+    /* Първи работник */
+    .purvox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    /* Втори работник */
+    .vtorox {
+        position: absolute;
+        top: 500px; /* Преместваме втория работник под първия */
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    /* Трети работник */
+    .tretox {
+        position: absolute;
+        top: 1000px; /* Преместваме третия работник под втория */
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    /* Четвърти работник */
+    .chetirix {
+        position: absolute;
+        top: 1500px; /* Преместваме четвъртия работник под третия */
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    /* Пети работник */
+    .petx {
+        position: absolute;
+        top: 2000px; /* Преместваме петия работник под четвъртия */
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    /* Шести работник */
+    .shestx {
+        position: absolute;
+        top: 2500px; /* Преместваме шестия работник под петия */
+        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    /* Продуктови карти */
+    .purvoqstie {
+        width: 400px;
+    }
+    
+    .zaglavieprodukt {
+        font-size: 24px;
+    }
+    
+    .opisanieprodukt {
+        font-size: 16px;
+    }
+    
+    #poruchai3 {
+        width: 200px;
+        margin-left: -320px;
+    }
+}

@@ -1,0 +1,137 @@
+/* Основни стилове */
+body {
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    font-family: "Libre Franklin", Sans-serif;
+    overflow-x: hidden;
+}
+
+/* Горно меню */
+#gornomenu {   
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 500; 
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+  
+#gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  #gornomenu button:hover {
+    color: black;
+    cursor: pointer;
+    animation: pulse 0.5s ease-in-out;
+  }
+  
+  #gornomenu button {
+    color: white;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 0 5px;
+  }
+  
+  .menu {
+      position: relative;
+      display: inline-block;
+  }
+  .menu-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  .dropdown {
+      font-family: "Libre Franklin", Sans-serif;
+      display: none;
+      position: absolute;
+      background-color: red;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+  .dropdown a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+  }
+  .dropdown a:hover {
+    color: white;
+      background-color: rgb(255, 51, 51);
+  }
+  .menu:hover .dropdown {
+      display: block;
+  }
+
+  .checkout {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-family: "Libre Franklin", Sans-serif;
+  }
+
+  .paymentform {
+    margin-left: -500px;
+    margin-top: 0px;
+  }
+  
+  .paymentform button {
+    width: 200px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid red;
+    border-radius: 15px;
+    height: 50px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .paymentform button:hover {
+    color: white;
+    background: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .paymentform input{
+    border-radius: 15px;
+    border: 1px solid red;
+    background: black;
+    color: white;
+    height: 50px;
+    width: 600px;
+  }
+
+  .paymentform input::placeholder {
+    padding-left: 10px;
+    color: white;
+  }
+
+  .produkt {
+    margin-top: -430px;
+    margin-left: 1000px;
+  }
